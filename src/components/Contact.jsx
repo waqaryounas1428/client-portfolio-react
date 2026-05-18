@@ -40,12 +40,12 @@ export const Contact = () => {
             <div className="contact-items">
               <div className="contact-item scroll-effect">
                 <FaEnvelope className="contact-icon" />
-                <span>nasrullah.agri87@gmail.com</span>
+                <a href="mailto:nasrullah.agri87@gmail.com">nasrullah.agri87@gmail.com</a>
               </div>
 
               <div className="contact-item scroll-effect">
                 <FaPhone className="contact-icon" />
-                <span>0333-1409480</span>
+                <a href="tel:03331409480">0333-1409480</a>
               </div>
 
               <div className="contact-item scroll-effect">
