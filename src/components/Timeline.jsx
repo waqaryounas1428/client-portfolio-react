@@ -21,12 +21,12 @@ export const Timeline = () => {
       title: "M.Sc Agriculture",
       desc: "Sindh Agriculture University."
     },
-    // {
-    //   icon: <FaGraduationCap />,
-    //   date: "2012",
-    //   title: "B.Sc Agriculture",
-    //   desc: "Balochistan Agriculture College."
-    // },
+    {
+      icon: <FaGraduationCap />,
+      date: "2012",
+      title: "B.Sc Agriculture",
+      desc: "Balochistan Agriculture College."
+    },
     {
       icon: <FaGraduationCap />,
       date: "2010",
