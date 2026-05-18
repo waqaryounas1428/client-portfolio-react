@@ -1,0 +1,238 @@
+/* ===== Section ===== */
+.timeline-section {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background Pattern */
+.timeline-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+  animation: backgroundShift 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* ===== Title ===== */
+.timeline-title {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-subtitle {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 60px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Cards Grid ===== */
+.timeline-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Card ===== */
+.timeline-card {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  backdrop-filter: blur(20px);
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(99, 102, 241, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Card Glow Effect */
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #a78bfa);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 20px 60px rgba(99, 102, 241, 0.3),
+    0 0 0 1px rgba(139, 92, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.timeline-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== Icon ===== */
+.timeline-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 50%;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 12px;
+  box-shadow: 
+    0 6px 20px rgba(99, 102, 241, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+}
+
+.timeline-card:hover .timeline-icon {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 
+    0 10px 28px rgba(139, 92, 246, 0.6),
+    inset 0 2px 6px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+/* ===== Date Badge ===== */
+.timeline-date {
+  display: inline-block;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* ===== Heading ===== */
+.timeline-card h3 {
+  font-size: 18px;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== Description ===== */
+.timeline-card p {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ===== Animation Delays ===== */
+.timeline-card:nth-child(1) { animation-delay: 0.1s; }
+.timeline-card:nth-child(2) { animation-delay: 0.2s; }
+.timeline-card:nth-child(3) { animation-delay: 0.3s; }
+.timeline-card:nth-child(4) { animation-delay: 0.4s; }
+.timeline-card:nth-child(5) { animation-delay: 0.5s; }
+
+/* ===== Large Desktop (1400px+) ===== */
+@media (min-width: 1400px) {
+  .timeline-section { padding: 100px 12%; }
+  .timeline-title { font-size: 52px; }
+  .timeline-cards { gap: 32px; }
+  .timeline-card { padding: 36px 32px; }
+  .timeline-icon { width: 46px; height: 46px; font-size: 22px; margin-right: 14px; }
+  .timeline-card h3 { font-size: 20px; }
+  .timeline-card p { font-size: 15px; }
+}
+
+/* ===== Tablet Landscape (1024px) ===== */
+@media (max-width: 1024px) {
+  .timeline-section { padding: 70px 6%; }
+  .timeline-title { font-size: 40px; }
+  .timeline-subtitle { font-size: 14px; margin-bottom: 50px; }
+  .timeline-cards { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .timeline-card { padding: 28px 24px; }
+  .timeline-icon { width: 38px; height: 38px; font-size: 18px; margin-right: 10px; }
+  .timeline-card h3 { font-size: 17px; }
+  .timeline-card p { font-size: 13.5px; }
+}
+
+/* ===== Tablet Portrait (768px) ===== */
+@media (max-width: 768px) {
+  .timeline-section { padding: 60px 5%; }
+  .timeline-title { font-size: 34px; }
+  .timeline-subtitle { font-size: 13px; margin-bottom: 40px; }
+  .timeline-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .timeline-card { padding: 24px 20px; border-radius: 16px; }
+  .timeline-icon { width: 36px; height: 36px; font-size: 16px; margin-right: 8px; }
+  .timeline-date { font-size: 11px; padding: 5px 14px; margin-bottom: 14px; }
+  .timeline-card h3 { font-size: 16px; margin-bottom: 10px; }
+  .timeline-card p { font-size: 13px; line-height: 1.6; }
+}
+
+/* ===== Mobile (480px) ===== */
+@media (max-width: 480px) {
+  .timeline-section { padding: 50px 4%; }
+  .timeline-title { font-size: 28px; }
+  .timeline-subtitle { font-size: 12px; margin-bottom: 32px; }
+  .timeline-cards { grid-template-columns: 1fr; gap: 16px; }
+  .timeline-card { padding: 22px 18px; border-radius: 14px; }
+  .timeline-icon { width: 34px; height: 34px; font-size: 15px; margin-right: 8px; }
+  .timeline-date { font-size: 10px; padding: 4px 12px; margin-bottom: 12px; }
+  .timeline-card h3 { font-size: 15px; margin-bottom: 8px; }
+  .timeline-card p { font-size: 12.5px; line-height: 1.5; }
+}
+
+/* ===== Small Mobile (360px) ===== */
+@media (max-width: 360px) {
+  .timeline-title { font-size: 24px; }
+  .timeline-subtitle { font-size: 11px; }
+  .timeline-card { padding: 20px 16px; }
+  .timeline-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
+  .timeline-card h3 { font-size: 14px; }
+  .timeline-card p { font-size: 12px; }
+}
