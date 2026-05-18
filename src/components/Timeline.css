@@ -219,8 +219,33 @@
   .timeline-section { padding: 50px 4%; }
   .timeline-title { font-size: 28px; }
   .timeline-subtitle { font-size: 12px; margin-bottom: 32px; }
-  .timeline-cards { grid-template-columns: 1fr; gap: 16px; }
-  .timeline-card { padding: 22px 18px; border-radius: 14px; }
+  .timeline-cards { 
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+  .timeline-cards::-webkit-scrollbar {
+    height: 6px;
+  }
+  .timeline-cards::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+  }
+  .timeline-cards::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 10px;
+  }
+  .timeline-card { 
+    min-width: 280px;
+    flex-shrink: 0;
+    padding: 22px 18px; 
+    border-radius: 14px;
+    scroll-snap-align: start;
+  }
   .timeline-icon { width: 34px; height: 34px; font-size: 15px; margin-right: 8px; }
   .timeline-date { font-size: 10px; padding: 4px 12px; margin-bottom: 12px; }
   .timeline-card h3 { font-size: 15px; margin-bottom: 8px; }
@@ -231,7 +256,10 @@
 @media (max-width: 360px) {
   .timeline-title { font-size: 24px; }
   .timeline-subtitle { font-size: 11px; }
-  .timeline-card { padding: 20px 16px; }
+  .timeline-card { 
+    min-width: 260px;
+    padding: 20px 16px; 
+  }
   .timeline-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
   .timeline-card h3 { font-size: 14px; }
   .timeline-card p { font-size: 12px; }
