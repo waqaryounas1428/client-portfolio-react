@@ -42,7 +42,7 @@ export const Footer = () => {
             <a href="https://www.linkedin.com/in/waqar-younas1428/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="mailto:writersin9@gmail.com" className="social-icon" aria-label="Email">
+            <a href="mailto:nasrullah.agri87@gmail.com" className="social-icon" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>

@@ -23,7 +23,7 @@ export const Contact = () => {
         <div className="contact-items scroll-effect">
           <div className="contact-item scroll-effect">
             <FaEnvelope className="contact-icon" />
-            <span>writersin9@gmail.com</span>
+            <span>nasrullah.agri87@gmail.com</span>
           </div>
 
           <div className="contact-item scroll-effect">

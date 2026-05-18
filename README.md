@@ -288,7 +288,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📧 Contact
 
 **Nasrullah**
-- 📧 Email: writersin9@gmail.com
+- 📧 Email: nasrullah.agri87@gmail.com
 - 📱 Phone: 03331409480
 - 🔗 GitHub: [Writers Inn](https://share.google/YiKB2rgzDklikDDlI)
 - 🌐 Portfolio: [Live Demo](https://your-portfolio-url.vercel.app)
