@@ -10,7 +10,7 @@ export const Research = () => {
       title: "Research Paper 1",
       topic: "Topic: EFFECT OF NEEM EXTRACT ON LEAFHOPPER OF POTATO CROP",
       description:
-        "A 2015 field study at Sindh Agriculture University and Quetta evaluated neem extract against potato leafhopper on potato crops. Results showed that higher neem doses effectively reduced infestation, with 100cc/plot giving the best control.",
+        "Field study evaluating neem extract effectiveness against potato leafhopper. Higher neem doses significantly reduced pest infestation, with 100cc/plot providing optimal control.",
       year: "2018",
       status: "Published",
       linkHref: "https://share.google/yRRYvgOSHLsp8YITR",
@@ -23,7 +23,7 @@ export const Research = () => {
       title: "Research Thesis",
       topic: "Topic: Impact of Neem Extract on Potato Leafhopper Control",
       description:
-        "A field trial conducted in 2015 evaluated different neem extract doses against potato leafhopper in potato crops. Results showed that higher neem concentrations effectively reduced pest infestation, with 100cc/plot providing the best control.",
+        "Comprehensive field trial examining neem extract doses for potato leafhopper control. Higher concentrations demonstrated effective pest reduction with optimal results at 100cc/plot.",
       year: "2017",
       status: "Published",
       linkHref: "/Neem-Research-Paper.pdf",
@@ -36,7 +36,7 @@ export const Research = () => {
       title: "Newspaper Articles",
       topic: "Topic: Mishandling Floods",
       description:
-        "A critical analysis of Pakistan's flood management highlights the devastating impact of recurring floods, the delayed response of state institutions, and the suffering of affected communities. It emphasizes the need for effective disaster preparedness, transparent relief distribution, responsible leadership, and coordinated efforts by government and volunteer organizations to minimize loss of life and property.",
+        "Critical analysis of Pakistan's flood management examining recurring disasters, institutional response delays, and community impact. Emphasizes disaster preparedness, transparent relief distribution, and coordinated government-volunteer efforts.",
       year: "2022",
       status: "Published",
       linkHref: "/Mishandling Floods-1.pdf",
@@ -51,7 +51,7 @@ export const Research = () => {
       title: "Essays & Paragraphs",
       topic: "Topic: Development Journey of Pakistan, 1947-present",
       description:
-        "Pakistan was created to ensure the welfare and progress of its people, but its development has remained limited in many social and economic sectors. Compared to countries like China, Bangladesh, and Western nations, Pakistan has struggled to achieve significant progress. Studying successful global development models could help the country improve its future growth and prosperity.",
+        "Examines Pakistan's development journey from 1947 to present, analyzing progress in social and economic sectors. Compares with global development models to identify pathways for future growth and prosperity.",
       year: "2024",
       status: "Published",
       linkHref: "/Essay write-up.docx.pdf",

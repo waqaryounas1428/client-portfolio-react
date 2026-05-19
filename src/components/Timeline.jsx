@@ -12,7 +12,7 @@ export const Timeline = () => {
     {
       icon: <FaBriefcase />,
       date: "2017 - Present",
-      title: "Agriculture Officer",
+      title: "Agriculture Officer (B-17)",
       desc: "Agricultural development & field expertise."
     },
     {
