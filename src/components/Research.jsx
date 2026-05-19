@@ -18,18 +18,21 @@ export const Research = () => {
       linkIcon: <FaExternalLinkAlt />,
       linkClass: "research-link vip-link"
     },
+    
     {
+      variant: "vip",
+      badge: "Featured",
       icon: <FaFileAlt className="research-icon" />,
-      title: "Research Thesis",
-      topic: "Topic: Impact of Neem Extract on Potato Leafhopper Control",
+      title: "Essays & Paragraphs",
+      topic: "Topic: Development Journey of Pakistan, 1947-present",
       description:
-        "Comprehensive field trial examining neem extract doses for potato leafhopper control. Higher concentrations demonstrated effective pest reduction with optimal results at 100cc/plot.",
-      year: "2017",
+        "Examines Pakistan's development journey from 1947 to present, analyzing progress in social and economic sectors. Compares with global development models to identify pathways for future growth and prosperity.",
+      year: "2024",
       status: "Published",
-      linkHref: "/Neem-Research-Paper.pdf",
+      linkHref: "/Essay write-up.docx.pdf",
       linkText: "View Full PDF",
       linkIcon: <FaFilePdf />,
-      linkClass: "research-link"
+      linkClass: "research-link vip-link"
     },
     {
       icon: <FaFileAlt className="research-icon" />,
@@ -45,20 +48,18 @@ export const Research = () => {
       linkClass: "research-link"
     },
     {
-      variant: "vip",
-      badge: "Featured",
       icon: <FaFileAlt className="research-icon" />,
-      title: "Essays & Paragraphs",
-      topic: "Topic: Development Journey of Pakistan, 1947-present",
+      title: "Research Thesis",
+      topic: "Topic: Impact of Neem Extract on Potato Leafhopper Control",
       description:
-        "Examines Pakistan's development journey from 1947 to present, analyzing progress in social and economic sectors. Compares with global development models to identify pathways for future growth and prosperity.",
-      year: "2024",
+        "Comprehensive field trial examining neem extract doses for potato leafhopper control. Higher concentrations demonstrated effective pest reduction with optimal results at 100cc/plot.",
+      year: "2017",
       status: "Published",
-      linkHref: "/Essay write-up.docx.pdf",
+      linkHref: "/Neem-Research-Paper.pdf",
       linkText: "View Full PDF",
       linkIcon: <FaFilePdf />,
-      linkClass: "research-link vip-link"
-    }
+      linkClass: "research-link"
+    },
   ];
 
   return (

@@ -1,5 +1,5 @@
 import pic2 from "../images/2.jpg";
-import { FaEnvelope, FaPhone, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaGithub, FaTwitter } from "react-icons/fa";
 import "./Contact.css";
 
 export const Contact = () => {
@@ -46,6 +46,17 @@ export const Contact = () => {
               <div className="contact-item scroll-effect">
                 <FaPhone className="contact-icon" />
                 <a href="tel:03331409480">0333-1409480</a>
+              </div>
+
+              <div className="contact-item scroll-effect">
+                <FaTwitter className="contact-icon" />
+                <a
+                  href="https://x.com/BNasrullah52059"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter/X (@BNasrullah52059)
+                </a>
               </div>
 
               <div className="contact-item scroll-effect">
