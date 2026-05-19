@@ -1,22 +1,11 @@
-import { useState, useEffect } from "react";
 import { FaBook, FaFileAlt, FaExternalLinkAlt, FaCrown, FaFilePdf } from "react-icons/fa";
 import "./Research.css";
 
 export const Research = () => {
-  const [mobile, setMobile] = useState(false);
-  const [showAll, setShowAll] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => setMobile(window.innerWidth <= 480);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const cards = [
     {
       variant: "vip",
-      // badge: "Featured",
+      badge: "Featured",
       icon: <FaBook className="research-icon" />,
       title: "Research Paper 1",
       topic: "Topic: EFFECT OF NEEM EXTRACT ON LEAFHOPPER OF POTATO CROP",
@@ -56,6 +45,8 @@ export const Research = () => {
       linkClass: "research-link"
     },
     {
+      variant: "vip",
+      badge: "Featured",
       icon: <FaFileAlt className="research-icon" />,
       title: "Essays & Paragraphs",
       topic: "Topic: Development Journey of Pakistan, 1947-present",
@@ -66,11 +57,9 @@ export const Research = () => {
       linkHref: "/Essay write-up.docx.pdf",
       linkText: "View Full PDF",
       linkIcon: <FaFilePdf />,
-      linkClass: "research-link"
+      linkClass: "research-link vip-link"
     }
   ];
-
-  const displayedCards = mobile && !showAll ? cards.slice(0, 3) : cards;
 
   return (
     <section id="research" className="research scroll-effect">
@@ -81,7 +70,7 @@ export const Research = () => {
       </p>
 
       <div className="research-grid">
-        {displayedCards.map((card, index) => (
+        {cards.map((card, index) => (
           <div
             className={`research-card ${card.variant === "vip" ? "vip-card" : ""} scroll-effect`}
             key={index}
@@ -114,12 +103,6 @@ export const Research = () => {
           </div>
         ))}
       </div>
-
-      {mobile && !showAll && (
-        <button className="research-see-more" onClick={() => setShowAll(true)}>
-          See More
-        </button>
-      )}
     </section>
   );
 };
