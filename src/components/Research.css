@@ -55,8 +55,8 @@
 .research-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  max-width: 1100px;
+  gap: 28px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -66,7 +66,7 @@
 .research-card {
   background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
   backdrop-filter: blur(20px);
-  padding: 28px 24px;
+  padding: 24px 20px;
   border-radius: 20px;
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.3),
@@ -384,7 +384,7 @@
 @media (min-width: 1400px) {
   .research { padding: 100px 12%; }
   .research-title { font-size: 52px; }
-  .research-grid { gap: 32px; max-width: 1500px; }
+  .research-grid { gap: 32px; max-width: 1300px; }
   .research-card { padding: 30px 26px; min-height: 450px; max-height: 450px; }
   .research-icon { width: 38px; height: 38px; font-size: 17px; margin-right: 11px; }
   .research-card h3 { font-size: 19px; }
@@ -396,8 +396,8 @@
   .research { padding: 70px 6%; }
   .research-title { font-size: 40px; }
   .research-subtitle { font-size: 14px; margin-bottom: 50px; }
-  .research-grid { gap: 28px; max-width: 100%; }
-  .research-card { padding: 26px 22px; min-height: 400px; max-height: 400px; }
+  .research-grid { gap: 24px; max-width: 100%; }
+  .research-card { padding: 24px 20px; min-height: 400px; max-height: 400px; }
   .research-icon { width: 34px; height: 34px; font-size: 16px; margin-right: 9px; }
   .research-card h3 { font-size: 17px; }
   .research-description { font-size: 12.5px; max-height: 80px; }
