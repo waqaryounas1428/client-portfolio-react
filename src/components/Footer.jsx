@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaPhone, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
 
 export const Footer = () => {
@@ -42,13 +42,22 @@ export const Footer = () => {
         <div className="footer-section">
           <h4>Connect</h4>
           <div className="footer-socials">
-            <a href="https://share.google/qe6YhNL9tqQG30PK4" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
+            <a href="https://www.facebook.com/share/18HjjryhNk/" target="_blank" rel="noopener noreferrer" className="social-icon facebook" aria-label="Facebook">
+              <FaFacebook />
+            </a>
+            <a href="https://www.instagram.com/nasrullahmastoi?igsh=MWpja2c0eWZ4MHFncA==" target="_blank" rel="noopener noreferrer" className="social-icon instagram" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://x.com/BNasrullah52059" target="_blank" rel="noopener noreferrer" className="social-icon twitter" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://share.google/qe6YhNL9tqQG30PK4" target="_blank" rel="noopener noreferrer" className="social-icon github" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://share.google/YiKB2rgzDklikDDlI" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Writers Inn">
+            <a href="https://share.google/YiKB2rgzDklikDDlI" target="_blank" rel="noopener noreferrer" className="social-icon writers-inn" aria-label="Writers Inn">
               <FaLinkedin />
             </a>
-            <a href="mailto:nasrullah.agri87@gmail.com" className="social-icon" aria-label="Email">
+            <a href="mailto:nasrullah.agri87@gmail.com" className="social-icon email" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>
