@@ -19,7 +19,7 @@ export const Contact = () => {
             <span className="highlight"> competitive examinations</span>, I am here to help you strengthen your
             <span className="highlight"> writing skills</span>,
             <span className="highlight"> analytical thinking</span>, and
-            <span className="highlight"> subject knowledge</span> to achieve outstanding results.
+            <span className="highlight"> subjects' knowledge</span> to achieve outstanding results.
           </p>
         </div>
       </div>

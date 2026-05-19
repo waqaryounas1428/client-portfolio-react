@@ -7,7 +7,7 @@ export const Timeline = () => {
       icon: <FaBriefcase />,
       date: "2021 - Present",
       title: "Director, WICA",
-      desc: "Mentoring competitive exam aspirants."
+      desc: "Mentoring competitive exams' aspirants."
     },
     {
       icon: <FaBriefcase />,

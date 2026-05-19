@@ -110,8 +110,8 @@
 }
 
 .contact-title {
-  font-size: 56px;
-  font-weight: 900;
+  font-size: 46px;
+  font-weight: 700;
   background: linear-gradient(
     135deg, 
     #1e40af 0%, 
@@ -330,8 +330,8 @@
 
 .contact-image {
   width: 100%;
-  max-width: 420px;
-  height: 520px;
+  max-width: 480px;
+  height: 620px;
   border-radius: 32px;
   object-fit: cover;
   display: block;
@@ -339,8 +339,12 @@
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 5px 15px rgba(0, 0, 0, 0.1);
-  filter: brightness(1) contrast(1.05);
+  filter: brightness(1.02) contrast(1.08) saturate(1.05);
   position: relative;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -ms-interpolation-mode: bicubic;
 }
 
 .contact-image-card:hover .contact-image {
@@ -356,7 +360,7 @@
   .contact-title { font-size: 52px; }
   .contact-description { font-size: 16px; }
   .contact-image-card { padding: 18px; }
-  .contact-image { width: 360px; height: 460px; }
+  .contact-image { width: 420px; height: 560px; }
   .contact-item a, .contact-item span { font-size: 15px; }
 }
 
@@ -367,7 +371,7 @@
   .contact-title { font-size: 34px; }
   .contact-description { font-size: 14px; }
   .contact-image-card { padding: 14px; }
-  .contact-image { width: 270px; height: 360px; }
+  .contact-image { width: 340px; height: 460px; }
   .contact-item { padding: 14px 16px; }
 }
 
@@ -387,7 +391,7 @@
   .contact-description-card { padding: 14px 16px; }
   .contact-info-card { padding: 14px 16px; }
   .contact-image-card { padding: 10px; }
-  .contact-image { width: 180px; height: 240px; }
+  .contact-image { width: 260px; height: 350px; }
   .contact-item { padding: 10px 12px; }
   .contact-item a, .contact-item span { font-size: 12px; }
   .contact-icon { font-size: 16px; }
@@ -444,8 +448,8 @@
   }
   
   .contact-image { 
-    width: 100px; 
-    height: 135px; 
+    width: 180px; 
+    height: 245px; 
     border-radius: 10px;
     object-fit: cover;
   }
@@ -502,8 +506,8 @@
   }
   
   .contact-image { 
-    width: 85px; 
-    height: 115px;
+    width: 160px; 
+    height: 220px;
     border-radius: 8px;
   }
 }

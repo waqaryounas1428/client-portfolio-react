@@ -8,7 +8,7 @@ export const Hero = () => {
         <p className="name scroll-effect">
           <span className="hello">Hello, I'm</span><br />
           <span className="user-name">Nasrullah S'b</span><br />
-          <span className="titles">agriculture Officer (BPS-17)</span>
+          <span className="titles">agriculture Officer (B-17)</span>
         </p>
       </div>
 

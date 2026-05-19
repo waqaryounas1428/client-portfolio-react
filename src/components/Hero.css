@@ -111,13 +111,17 @@
 }
 
 .hero-right img {
-  width: 300px;
-  height: 420px;
+  width: 380px;
+  height: 520px;
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 16px 40px rgba(124, 58, 237, 0.15);
   transition: all 0.4s ease;
   border: 3px solid rgba(124, 58, 237, 0.25);
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -ms-interpolation-mode: bicubic;
 }
 
 .hero-right img:hover {
@@ -133,7 +137,7 @@
   .hello { font-size: 28px; }
   .titles { font-size: 18px; }
   .intro { font-size: 16px; max-width: 720px; }
-  .hero-right img { width: 340px; height: 480px; }
+  .hero-right img { width: 420px; height: 580px; }
 }
 
 /* ===== Tablet Landscape (1024px) ===== */
@@ -143,7 +147,7 @@
   .hello { font-size: 20px; }
   .titles { font-size: 13px; letter-spacing: 4px; }
   .intro { font-size: 13.5px; padding: 22px 26px; }
-  .hero-right img { width: 260px; height: 370px; }
+  .hero-right img { width: 320px; height: 450px; }
   .content-wrapper { gap: 32px; }
 }
 
@@ -169,8 +173,8 @@
   }
 
   .hero-right img {
-    width: 200px;
-    height: 280px;
+    width: 260px;
+    height: 360px;
   }
 
   .user-name { font-size: 36px; letter-spacing: 1px; }
@@ -186,7 +190,7 @@
   .hello { font-size: 16px; }
   .titles { font-size: 10px; letter-spacing: 2.5px; }
   .intro { font-size: 13px; padding: 16px 18px; line-height: 1.75; }
-  .hero-right img { width: 170px; height: 240px; border-radius: 18px; }
+  .hero-right img { width: 220px; height: 310px; border-radius: 18px; }
   .name-title { margin-bottom: 18px; }
 }
 
@@ -196,5 +200,5 @@
   .hello { font-size: 14px; }
   .titles { font-size: 9px; letter-spacing: 2px; }
   .intro { font-size: 12px; padding: 14px 16px; }
-  .hero-right img { width: 150px; height: 210px; }
+  .hero-right img { width: 200px; height: 280px; }
 }
