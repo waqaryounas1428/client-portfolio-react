@@ -2,10 +2,11 @@
 .footer {
   background: linear-gradient(135deg, #0a0f1e 0%, #1a1f35 50%, #0a0f1e 100%);
   color: #e2e8f0;
-  padding: 80px 10% 30px;
+  padding: 60px 10% 20px;
   border-top: 2px solid rgba(255, 215, 0, 0.15);
   position: relative;
   overflow: hidden;
+  margin: 0;
 }
 
 /* Animated Background Pattern */
@@ -226,11 +227,12 @@
 /* ===== Bottom Bar ===== */
 .footer-bottom {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   border-top: 1px solid rgba(255, 215, 0, 0.15);
   margin-top: 30px;
   position: relative;
   z-index: 1;
+  padding-bottom: 0;
 }
 
 .footer-bottom p {
@@ -275,7 +277,7 @@
 
 /* Large Desktop (1400px+) */
 @media (min-width: 1400px) {
-  .footer { padding: 100px 12% 40px; }
+  .footer { padding: 70px 12% 25px; }
   .footer-logo { font-size: 36px; }
   .footer-description { font-size: 15px; }
   .footer-links a { font-size: 15px; }
@@ -284,7 +286,7 @@
 
 /* Tablet Landscape (1024px) */
 @media (max-width: 1024px) {
-  .footer { padding: 70px 6% 30px; }
+  .footer { padding: 50px 6% 20px; }
   .footer-content { 
     grid-template-columns: 2fr 1fr 1fr;
     gap: 40px; 
@@ -295,7 +297,7 @@
 
 /* Tablet Portrait (768px) */
 @media (max-width: 768px) {
-  .footer { padding: 60px 6% 28px; }
+  .footer { padding: 45px 6% 18px; }
   .footer-content {
     grid-template-columns: 1fr 1fr;
     gap: 35px;
@@ -308,7 +310,7 @@
 
 /* Mobile (480px) */
 @media (max-width: 480px) {
-  .footer { padding: 50px 5% 24px; }
+  .footer { padding: 40px 5% 16px; }
   .footer-content {
     grid-template-columns: 1fr;
     gap: 32px;
@@ -334,7 +336,7 @@
 
 /* Small Mobile (360px) */
 @media (max-width: 360px) {
-  .footer { padding: 44px 4% 20px; }
+  .footer { padding: 35px 4% 14px; }
   .footer-logo { font-size: 22px; }
   .footer-description, .footer-links a { font-size: 13px; }
   .social-icon { width: 42px; height: 42px; font-size: 17px; }

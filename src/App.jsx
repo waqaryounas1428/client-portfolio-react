@@ -37,7 +37,7 @@ function App() {
       <Expertise />
       <Timeline />
       <Research />
-      <Toolkit />
+      {/* <Toolkit /> */}
       <Contact />
       <Footer />
     </div>
