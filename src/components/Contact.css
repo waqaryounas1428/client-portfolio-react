@@ -13,7 +13,7 @@
       #ede9fe 80%, 
       #f5f3ff 100%
     );
-  gap: 55px;
+  gap: 50px;
   position: relative;
   overflow: hidden;
 }
@@ -68,47 +68,7 @@
   100% { transform: rotate(360deg) scale(1); }
 }
 
-/* ===== Top Section (Center) ===== */
-.contact-top {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== Bottom Section (Left-Right) ===== */
-.contact-bottom {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 60px;
-  max-width: 1400px;
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== Left (Image) ===== */
-.contact-left {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 450px;
-}
-
-/* ===== Right (Contact Info) ===== */
-.contact-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 550px;
-}
-
+/* ===== Title ===== */
 .contact-title {
   font-size: 46px;
   font-weight: 700;
@@ -125,13 +85,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 36px;
+  margin-bottom: 0;
   line-height: 1.1;
   letter-spacing: -1.5px;
   text-shadow: 0 6px 24px rgba(59, 130, 246, 0.25);
   animation: titleGradientFlow 6s ease infinite, titleFadeIn 1s ease-out;
   position: relative;
   filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.2));
+  z-index: 1;
+  text-align: center;
 }
 
 .contact-title::after {
@@ -175,6 +137,36 @@
     opacity: 1;
     box-shadow: 0 0 30px rgba(59, 130, 246, 0.8);
   }
+}
+
+/* ===== Main Content (Image Left, Cards Right) ===== */
+.contact-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1400px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Left (Image) ===== */
+.contact-left {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 420px;
+}
+
+/* ===== Right (Both Cards) ===== */
+.contact-right {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 750px;
 }
 
 .contact-description {
@@ -330,8 +322,8 @@
 
 .contact-image {
   width: 100%;
-  max-width: 480px;
-  height: 620px;
+  max-width: 380px;
+  height: 520px;
   border-radius: 32px;
   object-fit: cover;
   display: block;
@@ -355,23 +347,21 @@
 
 /* ===== Large Desktop (1400px+) ===== */
 @media (min-width: 1400px) {
-  .contact-section { padding: 70px 12% 100px; gap: 50px; }
-  .contact-bottom { gap: 80px; }
+  .contact-section { padding: 70px 12% 100px; gap: 60px; }
+  .contact-content { gap: 80px; }
   .contact-title { font-size: 52px; }
   .contact-description { font-size: 16px; }
-  .contact-image-card { padding: 18px; }
-  .contact-image { width: 420px; height: 560px; }
+  .contact-image { width: 360px; height: 480px; }
   .contact-item a, .contact-item span { font-size: 15px; }
 }
 
 /* ===== Tablet Landscape (1024px) ===== */
 @media (max-width: 1024px) {
-  .contact-section { padding: 50px 6% 70px; gap: 35px; }
-  .contact-bottom { gap: 40px; }
+  .contact-section { padding: 50px 6% 70px; gap: 40px; }
+  .contact-content { gap: 40px; }
   .contact-title { font-size: 34px; }
   .contact-description { font-size: 14px; }
-  .contact-image-card { padding: 14px; }
-  .contact-image { width: 340px; height: 460px; }
+  .contact-image { width: 300px; height: 400px; }
   .contact-item { padding: 14px 16px; }
 }
 
@@ -379,79 +369,79 @@
 @media (max-width: 768px) {
   .contact-section {
     padding: 40px 5% 50px;
-    gap: 25px;
+    gap: 30px;
   }
 
-  .contact-bottom {
-    gap: 25px;
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
-  .contact-title { font-size: 24px; margin-bottom: 16px; }
-  .contact-description { font-size: 12px; }
-  .contact-description-card { padding: 14px 16px; }
-  .contact-info-card { padding: 14px 16px; }
-  .contact-image-card { padding: 10px; }
-  .contact-image { width: 260px; height: 350px; }
-  .contact-item { padding: 10px 12px; }
-  .contact-item a, .contact-item span { font-size: 12px; }
-  .contact-icon { font-size: 16px; }
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contact-title { font-size: 28px; margin-bottom: 0; }
+  .contact-description { font-size: 13px; }
+  .contact-description-card { padding: 20px 24px; }
+  .contact-info-card { padding: 20px 24px; }
+  .contact-image { width: 260px; height: 350px; margin: 0 auto; }
+  .contact-item { padding: 12px 14px; }
+  .contact-item a, .contact-item span { font-size: 13px; }
+  .contact-icon { font-size: 18px; }
 }
 
 /* ===== Mobile (480px) ===== */
 @media (max-width: 480px) {
   .contact-section { 
     padding: 30px 4% 35px; 
-    gap: 18px;
+    gap: 20px;
   }
   
-  .contact-bottom {
-    gap: 14px;
+  .contact-content {
+    gap: 20px;
   }
   
-  /* Title and description reduced but same layout */
+  /* Title reduced */
   .contact-title { 
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.2;
-    margin-bottom: 12px;
   }
   
   /* Description card reduced */
   .contact-description-card {
-    padding: 10px 12px;
-    border-radius: 12px;
+    padding: 16px 18px;
+    border-radius: 16px;
   }
   
   .contact-description {
-    font-size: 9px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 1.6;
   }
   
   /* Contact info card reduced */
   .contact-info-card {
-    padding: 10px 12px;
-    border-radius: 12px;
+    padding: 16px 18px;
+    border-radius: 16px;
   }
   
-  .contact-items { gap: 8px; }
+  .contact-items { gap: 10px; }
   .contact-item { 
-    padding: 7px 9px;
-    border-radius: 8px;
+    padding: 10px 12px;
+    border-radius: 10px;
   }
   
-  .contact-item a, .contact-item span { font-size: 9px; }
-  .contact-icon { font-size: 12px; margin-right: 6px; }
+  .contact-item a, .contact-item span { font-size: 11px; }
+  .contact-icon { font-size: 16px; margin-right: 8px; }
   
-  /* Image card reduced */
-  .contact-image-card {
-    padding: 7px;
-    border-radius: 14px;
-  }
-  
+  /* Image reduced */
   .contact-image { 
     width: 180px; 
     height: 245px; 
-    border-radius: 10px;
-    object-fit: cover;
+    border-radius: 20px;
   }
 }
 
@@ -459,55 +449,49 @@
 @media (max-width: 360px) {
   .contact-section {
     padding: 25px 3% 28px;
-    gap: 14px;
+    gap: 16px;
   }
   
-  .contact-bottom {
-    gap: 10px;
+  .contact-content {
+    gap: 16px;
   }
   
   /* Extra reduced for small screens */
   .contact-title { 
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 10px;
   }
   
   /* Description card extra reduced */
   .contact-description-card {
-    padding: 8px 10px;
-    border-radius: 10px;
+    padding: 14px 16px;
+    border-radius: 14px;
   }
   
   .contact-description {
-    font-size: 8px;
-    line-height: 1.4;
+    font-size: 11px;
+    line-height: 1.5;
   }
   
   /* Contact info card extra reduced */
   .contact-info-card {
-    padding: 8px 10px;
-    border-radius: 10px;
+    padding: 14px 16px;
+    border-radius: 14px;
   }
   
-  .contact-items { gap: 6px; }
+  .contact-items { gap: 8px; }
   .contact-item { 
-    padding: 6px 7px;
-    border-radius: 7px;
+    padding: 8px 10px;
+    border-radius: 8px;
   }
   
-  .contact-item a, .contact-item span { font-size: 8px; }
-  .contact-icon { font-size: 11px; margin-right: 5px; }
+  .contact-item a, .contact-item span { font-size: 10px; }
+  .contact-icon { font-size: 14px; margin-right: 6px; }
   
-  /* Image card extra reduced */
-  .contact-image-card {
-    padding: 6px;
-    border-radius: 12px;
-  }
-  
+  /* Image extra reduced */
   .contact-image { 
     width: 160px; 
     height: 220px;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 }

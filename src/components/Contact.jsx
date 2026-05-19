@@ -6,26 +6,11 @@ export const Contact = () => {
   return (
     <section id="contact" className="contact-section scroll-effect">
       
-      {/* TOP - TITLE AND DESCRIPTION (CENTER) */}
-      <div className="contact-top scroll-effect">
-        <h1 className="contact-title scroll-effect">Let's Achieve Success Together</h1>
+      {/* TITLE (CENTER TOP) */}
+      <h1 className="contact-title scroll-effect">Let's Achieve Success Together</h1>
 
-        {/* Description Card */}
-        <div className="contact-description-card scroll-effect">
-          <p className="contact-description">
-            Whether you are preparing for <span className="highlight">CSS</span>,
-            <span className="highlight"> PMS</span>,
-            <span className="highlight"> PCS</span>, or other
-            <span className="highlight"> competitive examinations</span>, I am here to help you strengthen your
-            <span className="highlight"> writing skills</span>,
-            <span className="highlight"> analytical thinking</span>, and
-            <span className="highlight"> subjects' knowledge</span> to achieve outstanding results.
-          </p>
-        </div>
-      </div>
-
-      {/* BOTTOM - IMAGE (LEFT) AND CONTACT INFO (RIGHT) */}
-      <div className="contact-bottom scroll-effect">
+      {/* MAIN CONTENT - IMAGE LEFT, CARDS RIGHT */}
+      <div className="contact-content scroll-effect">
         
         {/* LEFT SIDE - IMAGE */}
         <div className="contact-left scroll-effect">
@@ -34,8 +19,23 @@ export const Contact = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE - CONTACT INFO */}
+        {/* RIGHT SIDE - DESCRIPTION CARD + CONTACT INFO CARD */}
         <div className="contact-right scroll-effect">
+          
+          {/* Description Card */}
+          <div className="contact-description-card scroll-effect">
+            <p className="contact-description">
+              Whether you are preparing for <span className="highlight">CSS</span>,
+              <span className="highlight"> PMS</span>,
+              <span className="highlight"> PCS</span>, or other
+              <span className="highlight"> competitive examinations</span>, I am here to help you strengthen your
+              <span className="highlight"> writing skills</span>,
+              <span className="highlight"> analytical thinking</span>, and
+              <span className="highlight"> subjects' knowledge</span> to achieve outstanding results.
+            </p>
+          </div>
+
+          {/* Contact Info Card */}
           <div className="contact-info-card scroll-effect">
             <div className="contact-items">
               <div className="contact-item scroll-effect">
@@ -71,6 +71,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
+
         </div>
 
       </div>
