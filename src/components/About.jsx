@@ -14,7 +14,7 @@ export const About = () => {
             <FaGraduationCap className="about-icon" />
             <h3>Education</h3>
             <p>
-              M.Sc. in Agricultural Sciences (Entomology) and B.A. in Political Science with expertise in insect science, crop protection, and governance.
+              M.Sc. in Agricultural Sciences (Entomology) and B.A. in Political Science with expertise in insect science, crop protection, and governance respectively.
             </p>
           </div>
 

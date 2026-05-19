@@ -28,25 +28,31 @@ export const Footer = () => {
         <div className="footer-section">
           <h4>Contact Info</h4>
           <div className="footer-contact">
-            <p><FaEnvelope /> nasrullah.agri87@gmail.com</p>
-            <p><FaPhone /> 03331409480</p>
+            <p>
+              <FaEnvelope /> 
+              <a href="mailto:nasrullah.agri87@gmail.com">nasrullah.agri87@gmail.com</a>
+            </p>
+            <p>
+              <FaPhone /> 
+              <a href="tel:03331409480">03331409480</a>
+            </p>
           </div>
         </div>
 
-        {/* <div className="footer-section">
+        <div className="footer-section">
           <h4>Connect</h4>
           <div className="footer-socials">
-            <a href="https://share.google/YiKB2rgzDklikDDlI" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Writers Inn">
+            <a href="https://share.google/qe6YhNL9tqQG30PK4" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/waqar-younas1428/" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
+            <a href="https://share.google/YiKB2rgzDklikDDlI" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Writers Inn">
               <FaLinkedin />
             </a>
             <a href="mailto:nasrullah.agri87@gmail.com" className="social-icon" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>
-        </div> */}
+        </div>
       </div>
 
       <div className="footer-bottom">
