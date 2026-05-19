@@ -1,6 +1,6 @@
 /* ===== Section ===== */
 .research {
-  padding: 80px 10%;
+  padding: 60px 10%;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   text-align: center;
   position: relative;
@@ -35,7 +35,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   letter-spacing: -1px;
   position: relative;
   z-index: 1;
@@ -44,7 +44,7 @@
 .research-subtitle {
   font-size: 15px;
   color: #cbd5e1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   letter-spacing: 1.2px;
   font-weight: 300;
   position: relative;
@@ -54,9 +54,9 @@
 /* ===== Grid ===== */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  max-width: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1400px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -66,8 +66,8 @@
 .research-card {
   background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
   backdrop-filter: blur(20px);
-  padding: 24px 20px;
-  border-radius: 20px;
+  padding: 18px 16px;
+  border-radius: 18px;
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(99, 102, 241, 0.2),
@@ -79,9 +79,9 @@
   text-align: left;
   display: flex;
   flex-direction: column;
-  min-height: 420px;
-  max-height: 420px;
+  height: 320px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Card Glow Effect */
@@ -98,7 +98,7 @@
 }
 
 .research-card:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: translateY(-8px) scale(1.01);
   box-shadow: 
     0 20px 60px rgba(99, 102, 241, 0.3),
     0 0 0 1px rgba(139, 92, 246, 0.4),
@@ -135,22 +135,21 @@
 /* ===== VIP Badge ===== */
 .vip-badge {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 14px;
+  right: 14px;
   background: linear-gradient(135deg, #ffd700, #ffed4e);
   color: #0f172a;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 18px;
+  font-size: 10px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   z-index: 2;
-  flex-shrink: 0;
 }
 
 /* ===== Icon ===== */
@@ -158,13 +157,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   border-radius: 50%;
-  font-size: 16px;
+  font-size: 13px;
   color: #ffffff;
-  margin-right: 10px;
+  margin-right: 8px;
   box-shadow: 
     0 8px 16px rgba(99, 102, 241, 0.5),
     0 4px 8px rgba(99, 102, 241, 0.3),
@@ -232,17 +231,16 @@
 
 /* ===== Heading ===== */
 .research-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   background: linear-gradient(135deg, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-weight: 700;
   line-height: 1.3;
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .vip-card h3 {
@@ -254,37 +252,34 @@
 
 /* ===== Topic ===== */
 .research-topic {
-  font-size: 12px;
+  font-size: 10px;
   color: #94a3b8;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   font-weight: 600;
   font-style: italic;
-  flex-shrink: 0;
 }
 
 /* ===== Description ===== */
 .research-description {
-  font-size: 13px;
+  font-size: 11px;
   color: #cbd5e1;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 300;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
-  max-height: 85px;
 }
 
 /* ===== Meta ===== */
 .research-meta {
   display: flex;
-  gap: 10px;
-  margin-bottom: 14px;
-  flex-shrink: 0;
+  gap: 6px;
+  margin-bottom: 8px;
 }
 
 .research-year,
@@ -292,9 +287,9 @@
   display: inline-block;
   background: rgba(99, 102, 241, 0.15);
   color: #a78bfa;
-  padding: 5px 12px;
-  border-radius: 16px;
-  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 14px;
+  font-size: 9px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -311,22 +306,21 @@
 /* ===== Buttons ===== */
 .research-buttons {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
   margin-top: auto;
-  flex-shrink: 0;
 }
 
 .research-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
+  gap: 5px;
+  padding: 7px 12px;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #ffffff;
   text-decoration: none;
-  border-radius: 12px;
-  font-size: 13px;
+  border-radius: 10px;
+  font-size: 10px;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
@@ -351,29 +345,6 @@
   box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
 }
 
-/* ===== See More Button ===== */
-.research-see-more {
-  margin-top: 40px;
-  padding: 14px 32px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: #ffffff;
-  border: none;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
-  position: relative;
-  z-index: 1;
-}
-
-.research-see-more:hover {
-  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.6);
-}
-
 /* ===== Animation Delays ===== */
 .research-card:nth-child(1) { animation-delay: 0.1s; }
 .research-card:nth-child(2) { animation-delay: 0.2s; }
@@ -382,50 +353,25 @@
 
 /* ===== Large Desktop (1400px+) ===== */
 @media (min-width: 1400px) {
-  .research { padding: 100px 12%; }
+  .research { padding: 80px 12%; }
   .research-title { font-size: 52px; }
-  .research-grid { gap: 32px; max-width: 1300px; }
-  .research-card { padding: 30px 26px; min-height: 450px; max-height: 450px; }
-  .research-icon { width: 38px; height: 38px; font-size: 17px; margin-right: 11px; }
-  .research-card h3 { font-size: 19px; }
-  .research-description { font-size: 13.5px; max-height: 90px; }
+  .research-grid { gap: 24px; max-width: 1600px; }
+  .research-card { padding: 20px 18px; height: 340px; }
+  .research-icon { width: 32px; height: 32px; font-size: 14px; }
+  .research-card h3 { font-size: 17px; }
+  .research-description { font-size: 12px; }
 }
 
 /* ===== Tablet Landscape (1024px) ===== */
 @media (max-width: 1024px) {
-  .research { padding: 70px 6%; }
+  .research { padding: 50px 6%; }
   .research-title { font-size: 40px; }
-  .research-subtitle { font-size: 14px; margin-bottom: 50px; }
-  .research-grid { gap: 24px; max-width: 100%; }
-  .research-card { padding: 24px 20px; min-height: 400px; max-height: 400px; }
-  .research-icon { width: 34px; height: 34px; font-size: 16px; margin-right: 9px; }
-  .research-card h3 { font-size: 17px; }
-  .research-description { font-size: 12.5px; max-height: 80px; }
-}
-
-/* ===== Tablet Portrait (768px) ===== */
-@media (max-width: 768px) {
-  .research { padding: 60px 5%; }
-  .research-title { font-size: 34px; }
-  .research-subtitle { font-size: 13px; margin-bottom: 40px; }
-  .research-grid { grid-template-columns: 1fr; gap: 24px; }
-  .research-card { padding: 24px 20px; border-radius: 16px; min-height: 380px; max-height: 380px; }
-  .research-icon { width: 32px; height: 32px; font-size: 15px; margin-right: 8px; }
-  .research-card h3 { font-size: 16px; margin-bottom: 10px; }
-  .research-topic { font-size: 11px; }
-  .research-description { font-size: 12px; line-height: 1.5; max-height: 75px; }
-}
-
-/* ===== Mobile (480px) ===== */
-@media (max-width: 480px) {
-  .research { padding: 50px 4%; }
-  .research-title { font-size: 28px; }
-  .research-subtitle { font-size: 12px; margin-bottom: 32px; }
+  .research-subtitle { font-size: 14px; margin-bottom: 35px; }
   .research-grid { 
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 20px;
+    gap: 16px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10px;
@@ -443,39 +389,133 @@
     border-radius: 10px;
   }
   .research-card { 
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 260px;
+    max-width: 260px;
     flex-shrink: 0;
-    padding: 24px 20px; 
-    border-radius: 16px;
+    padding: 16px 14px; 
+    height: 300px;
     scroll-snap-align: start;
-    min-height: auto;
   }
-  .research-icon { width: 34px; height: 34px; font-size: 15px; margin-right: 8px; }
-  .research-card h3 { font-size: 16px; margin-bottom: 10px; }
-  .research-topic { font-size: 11px; margin-bottom: 10px; }
-  .research-description { font-size: 12.5px; line-height: 1.5; margin-bottom: 14px; }
-  .research-meta { gap: 8px; margin-bottom: 14px; }
-  .research-year, .research-status { font-size: 10px; padding: 4px 10px; }
-  .research-link { padding: 8px 14px; font-size: 12px; }
-  .vip-badge { font-size: 10px; padding: 5px 12px; top: 14px; right: 14px; }
+  .research-icon { width: 28px; height: 28px; font-size: 13px; margin-right: 7px; }
+  .research-card h3 { font-size: 15px; margin-bottom: 5px; }
+  .research-topic { font-size: 9px; margin-bottom: 5px; }
+  .research-description { font-size: 10px; margin-bottom: 6px; -webkit-line-clamp: 3; }
+  .research-meta { gap: 5px; margin-bottom: 6px; }
+  .research-year, .research-status { font-size: 8px; padding: 2px 7px; }
+  .research-link { padding: 6px 10px; font-size: 9px; }
+  .vip-badge { font-size: 9px; padding: 4px 10px; top: 12px; right: 12px; }
+}
+
+/* ===== Tablet Portrait (768px) ===== */
+@media (max-width: 768px) {
+  .research { padding: 45px 5%; }
+  .research-title { font-size: 34px; }
+  .research-subtitle { font-size: 13px; margin-bottom: 30px; }
+  .research-grid { 
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 14px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+  .research-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+  .research-grid::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+  }
+  .research-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 10px;
+  }
+  .research-card { 
+    min-width: 240px;
+    max-width: 240px;
+    flex-shrink: 0;
+    padding: 14px 12px; 
+    border-radius: 16px; 
+    height: 280px;
+    scroll-snap-align: start;
+  }
+  .research-icon { width: 26px; height: 26px; font-size: 12px; margin-right: 6px; }
+  .research-card h3 { font-size: 14px; margin-bottom: 5px; }
+  .research-topic { font-size: 9px; margin-bottom: 5px; }
+  .research-description { font-size: 10px; line-height: 1.4; -webkit-line-clamp: 2; margin-bottom: 6px; }
+  .research-meta { gap: 5px; margin-bottom: 6px; }
+  .research-year, .research-status { font-size: 8px; padding: 2px 6px; }
+  .research-link { padding: 5px 9px; font-size: 9px; }
+  .vip-badge { font-size: 8px; padding: 3px 8px; top: 10px; right: 10px; }
+}
+
+/* ===== Mobile (480px) ===== */
+@media (max-width: 480px) {
+  .research { padding: 40px 4%; }
+  .research-title { font-size: 28px; }
+  .research-subtitle { font-size: 12px; margin-bottom: 25px; }
+  .research-grid { 
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+  .research-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+  .research-grid::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+  }
+  .research-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 10px;
+  }
+  .research-card { 
+    min-width: 220px;
+    max-width: 220px;
+    flex-shrink: 0;
+    padding: 12px 10px; 
+    border-radius: 14px;
+    scroll-snap-align: start;
+    height: 260px;
+  }
+  .research-icon { width: 24px; height: 24px; font-size: 11px; margin-right: 6px; }
+  .research-card h3 { font-size: 13px; margin-bottom: 4px; }
+  .research-topic { font-size: 8px; margin-bottom: 4px; }
+  .research-description { font-size: 9px; line-height: 1.4; margin-bottom: 5px; -webkit-line-clamp: 2; }
+  .research-meta { gap: 4px; margin-bottom: 5px; }
+  .research-year, .research-status { font-size: 7px; padding: 2px 6px; }
+  .research-link { padding: 5px 8px; font-size: 8px; gap: 4px; }
+  .vip-badge { font-size: 8px; padding: 3px 7px; top: 8px; right: 8px; }
 }
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
+  .research { padding: 35px 3%; }
   .research-title { font-size: 24px; }
-  .research-subtitle { font-size: 11px; }
+  .research-subtitle { font-size: 11px; margin-bottom: 20px; }
   .research-grid {
-    gap: 16px;
+    gap: 10px;
   }
   .research-card { 
-    min-width: 280px;
-    max-width: 280px;
-    padding: 20px 18px; 
+    min-width: 200px;
+    max-width: 200px;
+    padding: 10px 8px; 
+    height: 240px;
   }
-  .research-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
-  .research-card h3 { font-size: 15px; }
-  .research-topic { font-size: 10px; }
-  .research-description { font-size: 12px; }
-  .vip-badge { font-size: 9px; padding: 4px 10px; top: 12px; right: 12px; }
+  .research-icon { width: 22px; height: 22px; font-size: 10px; margin-right: 5px; }
+  .research-card h3 { font-size: 12px; margin-bottom: 4px; }
+  .research-topic { font-size: 8px; margin-bottom: 4px; }
+  .research-description { font-size: 9px; -webkit-line-clamp: 2; margin-bottom: 5px; }
+  .research-meta { gap: 4px; margin-bottom: 5px; }
+  .research-year, .research-status { font-size: 7px; padding: 2px 5px; }
+  .research-link { padding: 4px 7px; font-size: 8px; }
+  .vip-badge { font-size: 7px; padding: 2px 6px; top: 8px; right: 8px; }
 }

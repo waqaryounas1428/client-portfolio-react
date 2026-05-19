@@ -5,73 +5,43 @@ import "./Contact.css";
 export const Contact = () => {
   return (
     <section id="contact" className="contact-section scroll-effect">
-      
+
       {/* TITLE (CENTER TOP) */}
       <h1 className="contact-title scroll-effect">Let's Achieve Success Together</h1>
 
-      {/* MAIN CONTENT - IMAGE LEFT, CARDS RIGHT */}
-      <div className="contact-content scroll-effect">
-        
+      {/* TOP ROW - IMAGE LEFT, DESCRIPTION CARD RIGHT */}
+      <div className="contact-top-row scroll-effect">
+
         {/* LEFT SIDE - IMAGE */}
-        <div className="contact-left scroll-effect">
+        <div className="contact-image-wrapper scroll-effect">
           <div className="contact-image-card scroll-effect">
             <img src={pic2} alt="profile" className="contact-image" />
           </div>
         </div>
 
-        {/* RIGHT SIDE - DESCRIPTION CARD + CONTACT INFO CARD */}
-        <div className="contact-right scroll-effect">
-          
-          {/* Description Card */}
-          <div className="contact-description-card scroll-effect">
-            <p className="contact-description">
-              Whether you are preparing for <span className="highlight">CSS</span>,
-              <span className="highlight"> PMS</span>,
-              <span className="highlight"> PCS</span>, or other
-              <span className="highlight"> competitive examinations</span>, I am here to help you strengthen your
-              <span className="highlight"> writing skills</span>,
-              <span className="highlight"> analytical thinking</span>, and
-              <span className="highlight"> subjects' knowledge</span> to achieve outstanding results.
-            </p>
-          </div>
-
-          {/* Contact Info Card */}
-          <div className="contact-info-card scroll-effect">
-            <div className="contact-items">
-              <div className="contact-item scroll-effect">
-                <FaEnvelope className="contact-icon" />
-                <a href="mailto:nasrullah.agri87@gmail.com">nasrullah.agri87@gmail.com</a>
-              </div>
-
-              <div className="contact-item scroll-effect">
-                <FaPhone className="contact-icon" />
-                <a href="tel:03331409480">0333-1409480</a>
-              </div>
-
-              <div className="contact-item scroll-effect">
-                <FaTwitter className="contact-icon" />
-                <a
-                  href="https://x.com/BNasrullah52059"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Twitter/X (@BNasrullah52059)
-                </a>
-              </div>
-
-              <div className="contact-item scroll-effect">
-                <FaGithub className="contact-icon" />
-                <a
-                  href="https://share.google/YiKB2rgzDklikDDlI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Writers Inn (writersin9-ctrl)
-                </a>
-              </div>
+        {/* RIGHT SIDE - DESCRIPTION CARD */}
+        <div className="contact-description-wrapper scroll-effect">
+          {/* <div className="contact-description-card scroll-effect"> */}
+            <div className="contact-description-card scroll-effect">
+              <p className="contact-description">
+                Whether you are preparing for <span className="highlight">CSS</span>,
+                <span className="highlight"> PMS</span>,
+                <span className="highlight"> PCS</span>, or other
+                <span className="highlight"> competitive examinations</span>, I am here to help you strengthen your
+                <span className="highlight"> writing skills</span>,
+                <span className="highlight"> analytical thinking</span>, and
+                <span className="highlight"> subject knowledge</span> to achieve outstanding results. Together, we will work on
+                <span className="highlight"> skill-based areas</span> such as
+                <span className="highlight"> Art of Writing</span>,
+                <span className="highlight"> Grammar & Composition</span>,
+                <span className="highlight"> Analytical Reasoning & Mathematics</span>, and
+                <span className="highlight"> Question Attempting Techniques</span> with a strong focus on
+                <span className="highlight"> continuous practice</span>,
+                <span className="highlight"> refinement</span>, and
+                <span className="highlight"> exam-oriented preparation</span> until you achieve your goals.
+              </p>
             </div>
-          </div>
-
+          {/* </div> */}
         </div>
 
       </div>

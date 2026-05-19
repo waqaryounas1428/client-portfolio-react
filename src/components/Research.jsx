@@ -5,7 +5,7 @@ export const Research = () => {
   const cards = [
     {
       variant: "vip",
-      badge: "Featured",
+      // badge: "Featured",
       icon: <FaBook className="research-icon" />,
       title: "Research Paper 1",
       topic: "Topic: EFFECT OF NEEM EXTRACT ON LEAFHOPPER OF POTATO CROP",
@@ -21,7 +21,7 @@ export const Research = () => {
     
     {
       variant: "vip",
-      badge: "Featured",
+      // badge: "Featured",
       icon: <FaFileAlt className="research-icon" />,
       title: "Essays & Paragraphs",
       topic: "Topic: Development Journey of Pakistan, 1947-present",

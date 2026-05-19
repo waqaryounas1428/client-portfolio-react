@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 10% 80px;
+  padding: 30px 10% 35px;
   background: 
     linear-gradient(135deg, 
       #f0f9ff 0%, 
@@ -13,7 +13,7 @@
       #ede9fe 80%, 
       #f5f3ff 100%
     );
-  gap: 50px;
+  gap: 20px;
   position: relative;
   overflow: hidden;
 }
@@ -139,40 +139,50 @@
   }
 }
 
-/* ===== Main Content (Image Left, Cards Right) ===== */
-.contact-content {
+/* ===== Top Row (Image Left, Description Right) ===== */
+.contact-top-row {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 60px;
-  max-width: 1400px;
+  gap: 25px;
+  max-width: 1200px;
   position: relative;
   z-index: 1;
 }
 
-/* ===== Left (Image) ===== */
-.contact-left {
-  flex: 0.8;
+/* ===== Image Wrapper (Left) ===== */
+.contact-image-wrapper {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 420px;
+  max-width: 400px;
 }
 
-/* ===== Right (Both Cards) ===== */
-.contact-right {
-  flex: 1.2;
+/* ===== Description Wrapper (Right) ===== */
+.contact-description-wrapper {
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 750px;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+/* ===== Bottom Row (Contact Info Full Width) ===== */
+.contact-bottom-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-description {
-  font-size: 16px;
+  font-size: 14px;
   color: #475569;
-  line-height: 2;
+  line-height: 1.8;
   margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.3px;
@@ -182,17 +192,19 @@
 .contact-description-card {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
-  padding: 32px 40px;
-  border-radius: 28px;
+  padding: 20px 24px;
+  border-radius: 24px;
   border: 1px solid rgba(59, 130, 246, 0.15);
   box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.08),
     0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s ease;
-  max-width: 980px;
+  transition: all 0.3s ease;
   width: 100%;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 280px;
 }
 
 .contact-description-card:hover {
@@ -209,11 +221,15 @@
   transition: color 0.3s ease;
 }
 
+.contact-description-card:hover .highlight {
+  color: #2563eb;
+}
+
 /* ===== Contact Info Card ===== */
 .contact-info-card {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
-  padding: 36px 40px;
+  padding: 22px 26px;
   border-radius: 28px;
   border: 1px solid rgba(59, 130, 246, 0.15);
   box-shadow: 
@@ -250,14 +266,14 @@
 .contact-items {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .contact-item {
   display: flex;
   align-items: center;
   background: rgba(249, 250, 251, 0.8);
-  padding: 16px 20px;
+  padding: 12px 16px;
   border-radius: 14px;
   color: #1e293b;
   transition: all 0.3s ease;
@@ -323,7 +339,7 @@
 .contact-image {
   width: 100%;
   max-width: 380px;
-  height: 520px;
+  height: 280px;
   border-radius: 32px;
   object-fit: cover;
   display: block;
@@ -347,49 +363,51 @@
 
 /* ===== Large Desktop (1400px+) ===== */
 @media (min-width: 1400px) {
-  .contact-section { padding: 70px 12% 100px; gap: 60px; }
-  .contact-content { gap: 80px; }
+  .contact-section { padding: 35px 12% 45px; gap: 25px; }
+  .contact-top-row { gap: 28px; }
   .contact-title { font-size: 52px; }
-  .contact-description { font-size: 16px; }
-  .contact-image { width: 360px; height: 480px; }
+  .contact-description { font-size: 15px; }
+  .contact-description-card { min-height: 300px; padding: 22px 28px; }
+  .contact-image { width: 360px; height: 300px; }
   .contact-item a, .contact-item span { font-size: 15px; }
 }
 
 /* ===== Tablet Landscape (1024px) ===== */
 @media (max-width: 1024px) {
-  .contact-section { padding: 50px 6% 70px; gap: 40px; }
-  .contact-content { gap: 40px; }
+  .contact-section { padding: 28px 6% 35px; gap: 18px; }
+  .contact-top-row { gap: 20px; }
   .contact-title { font-size: 34px; }
-  .contact-description { font-size: 14px; }
-  .contact-image { width: 300px; height: 400px; }
-  .contact-item { padding: 14px 16px; }
+  .contact-description { font-size: 13px; }
+  .contact-description-card { min-height: 240px; padding: 18px 22px; }
+  .contact-image { width: 240px; height: 240px; }
+  .contact-item { padding: 12px 14px; }
 }
 
 /* ===== Tablet Portrait (768px) ===== */
 @media (max-width: 768px) {
   .contact-section {
-    padding: 40px 5% 50px;
-    gap: 30px;
+    padding: 22px 5% 28px;
+    gap: 15px;
   }
 
-  .contact-content {
+  .contact-top-row {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 14px;
   }
 
-  .contact-left,
-  .contact-right {
+  .contact-image-wrapper,
+  .contact-description-wrapper {
     max-width: 100%;
     width: 100%;
   }
 
   .contact-title { font-size: 28px; margin-bottom: 0; }
-  .contact-description { font-size: 13px; }
-  .contact-description-card { padding: 20px 24px; }
-  .contact-info-card { padding: 20px 24px; }
-  .contact-image { width: 260px; height: 350px; margin: 0 auto; }
-  .contact-item { padding: 12px 14px; }
+  .contact-description { font-size: 12px; line-height: 1.7; }
+  .contact-description-card { padding: 14px 18px; min-height: auto; }
+  .contact-info-card { padding: 16px 18px; }
+  .contact-image { width: 180px; height: 220px; margin: 0 auto; }
+  .contact-item { padding: 9px 11px; }
   .contact-item a, .contact-item span { font-size: 13px; }
   .contact-icon { font-size: 18px; }
 }
@@ -397,12 +415,12 @@
 /* ===== Mobile (480px) ===== */
 @media (max-width: 480px) {
   .contact-section { 
-    padding: 30px 4% 35px; 
-    gap: 20px;
+    padding: 16px 4% 20px; 
+    gap: 12px;
   }
   
-  .contact-content {
-    gap: 20px;
+  .contact-top-row {
+    gap: 12px;
   }
   
   /* Title reduced */
@@ -413,24 +431,25 @@
   
   /* Description card reduced */
   .contact-description-card {
-    padding: 16px 18px;
+    padding: 10px 12px;
     border-radius: 16px;
+    min-height: auto;
   }
   
   .contact-description {
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.6;
   }
   
   /* Contact info card reduced */
   .contact-info-card {
-    padding: 16px 18px;
+    padding: 12px 14px;
     border-radius: 16px;
   }
   
-  .contact-items { gap: 10px; }
+  .contact-items { gap: 7px; }
   .contact-item { 
-    padding: 10px 12px;
+    padding: 7px 9px;
     border-radius: 10px;
   }
   
@@ -439,8 +458,8 @@
   
   /* Image reduced */
   .contact-image { 
-    width: 180px; 
-    height: 245px; 
+    width: 120px; 
+    height: 160px; 
     border-radius: 20px;
   }
 }
@@ -448,12 +467,12 @@
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
   .contact-section {
-    padding: 25px 3% 28px;
-    gap: 16px;
+    padding: 14px 3% 18px;
+    gap: 10px;
   }
   
-  .contact-content {
-    gap: 16px;
+  .contact-top-row {
+    gap: 10px;
   }
   
   /* Extra reduced for small screens */
@@ -464,24 +483,25 @@
   
   /* Description card extra reduced */
   .contact-description-card {
-    padding: 14px 16px;
+    padding: 8px 10px;
     border-radius: 14px;
+    min-height: auto;
   }
   
   .contact-description {
-    font-size: 11px;
+    font-size: 9px;
     line-height: 1.5;
   }
   
   /* Contact info card extra reduced */
   .contact-info-card {
-    padding: 14px 16px;
+    padding: 10px 12px;
     border-radius: 14px;
   }
   
-  .contact-items { gap: 8px; }
+  .contact-items { gap: 5px; }
   .contact-item { 
-    padding: 8px 10px;
+    padding: 6px 8px;
     border-radius: 8px;
   }
   
@@ -490,8 +510,8 @@
   
   /* Image extra reduced */
   .contact-image { 
-    width: 160px; 
-    height: 220px;
+    width: 100px; 
+    height: 135px;
     border-radius: 16px;
   }
 }
