@@ -26,10 +26,10 @@
   font-family: 'Poppins', 'Montserrat', sans-serif;
   background: linear-gradient(
     135deg,
-    #00ff88 0%,
-    #00d4ff 25%,
+    #00f5a0 0%,
+    #00d9f5 25%,
     #7c3aed 60%,
-    #ff0080 100%
+    #ff2d95 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -38,8 +38,8 @@
   display: block;
   line-height: 1.15;
   text-shadow:
-    0 0 15px rgba(124, 58, 237, 0.6),
-    0 0 30px rgba(219, 39, 119, 0.5);
+    0 0 10px rgba(124, 58, 237, 0.4),
+    0 0 20px rgba(219, 39, 119, 0.3);
   background-size: 200% auto;
   animation: textGlow 5s linear infinite;
 }
@@ -118,9 +118,9 @@
   height: 420px;
   object-fit: cover;
   border-radius: 24px;
-  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.25);
+  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
-  border: 3px solid rgba(124, 58, 237, 0.4);
+  border: 3px solid rgba(124, 58, 237, 0.25);
   /* Full HD image quality */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
@@ -135,8 +135,8 @@
 
 .hero-right img:hover {
   transform: scale(1.04) rotate(-1deg) translateZ(0);
-  box-shadow: 0 22px 50px rgba(219, 39, 119, 0.35);
-  border-color: rgba(219, 39, 119, 0.6);
+  box-shadow: 0 22px 50px rgba(219, 39, 119, 0.2);
+  border-color: rgba(219, 39, 119, 0.4);
 }
 
 /* ===== Large Desktop (1400px+) ===== */
