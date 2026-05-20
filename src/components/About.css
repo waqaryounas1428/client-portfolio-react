@@ -57,55 +57,6 @@
   font-size: 38px;
   color: #3b82f6;
   margin-bottom: 14px;
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
-  transform: perspective(800px) rotateX(15deg) rotateY(-10deg);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.4))
-          drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
-}
-
-.about-icon::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 40%;
-  height: 40%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.8), transparent);
-  border-radius: 50%;
-  filter: blur(4px);
-  z-index: 1;
-}
-
-.about-icon::after {
-  content: '';
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 20%;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.4), transparent);
-  filter: blur(8px);
-  z-index: -1;
-}
-
-.about-card:hover .about-icon {
-  transform: perspective(800px) rotateX(-5deg) rotateY(15deg) translateZ(30px) scale(1.15);
-  filter: drop-shadow(0 12px 24px rgba(59, 130, 246, 0.6))
-          drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
-  animation: iconFloat 2s ease-in-out infinite;
-}
-
-@keyframes iconFloat {
-  0%, 100% {
-    transform: perspective(800px) rotateX(-5deg) rotateY(15deg) translateZ(30px) translateY(0px) scale(1.15);
-  }
-  50% {
-    transform: perspective(800px) rotateX(-5deg) rotateY(15deg) translateZ(30px) translateY(-8px) scale(1.15);
-  }
 }
 
 .about-card h3 {

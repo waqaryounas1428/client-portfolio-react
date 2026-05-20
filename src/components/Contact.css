@@ -295,56 +295,12 @@
   margin-right: 16px;
   color: #3b82f6;
   flex-shrink: 0;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  display: inline-block;
-  transform-style: preserve-3d;
-  transform: perspective(500px) rotateX(8deg) rotateY(-8deg);
-  filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.4))
-          drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-}
-
-.contact-icon::before {
-  content: '';
-  position: absolute;
-  top: 12%;
-  left: 12%;
-  width: 35%;
-  height: 35%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), transparent);
-  border-radius: 50%;
-  filter: blur(3px);
-  z-index: 1;
-}
-
-.contact-icon::after {
-  content: '';
-  position: absolute;
-  bottom: -15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 20%;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.4), transparent);
-  filter: blur(6px);
-  z-index: -1;
+  transition: all 0.3s ease;
 }
 
 .contact-item:hover .contact-icon {
-  transform: perspective(500px) rotateX(-5deg) rotateY(15deg) translateZ(20px) scale(1.2);
+  transform: scale(1.1);
   color: #2563eb;
-  filter: drop-shadow(0 8px 16px rgba(59, 130, 246, 0.6))
-          drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-  animation: iconPulse 1.5s ease-in-out infinite;
-}
-
-@keyframes iconPulse {
-  0%, 100% {
-    transform: perspective(500px) rotateX(-5deg) rotateY(15deg) translateZ(20px) scale(1.2);
-  }
-  50% {
-    transform: perspective(500px) rotateX(-5deg) rotateY(15deg) translateZ(25px) scale(1.25);
-  }
 }
 
 .contact-item a,

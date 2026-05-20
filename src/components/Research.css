@@ -218,7 +218,6 @@
     inset 0 -6px 12px rgba(0, 0, 0, 0.4),
     inset 0 6px 12px rgba(255, 255, 255, 0.4);
   background: linear-gradient(135deg, #8b5cf6, #a78bfa);
-  animation: iconSpin 2s ease-in-out infinite;
 }
 
 .vip-card:hover .research-icon {
@@ -228,15 +227,6 @@
     inset 0 -6px 12px rgba(184, 134, 11, 0.5),
     inset 0 6px 12px rgba(255, 255, 255, 0.5);
   background: linear-gradient(135deg, #ffed4e, #ffd700);
-}
-
-@keyframes iconSpin {
-  0%, 100% {
-    transform: perspective(500px) rotateX(0deg) rotateY(15deg) translateZ(0px) scale(1.15);
-  }
-  50% {
-    transform: perspective(500px) rotateX(0deg) rotateY(195deg) translateZ(10px) scale(1.15);
-  }
 }
 
 /* ===== Heading ===== */

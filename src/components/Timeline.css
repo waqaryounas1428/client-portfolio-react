@@ -161,16 +161,6 @@
     inset 0 -6px 12px rgba(0, 0, 0, 0.4),
     inset 0 6px 12px rgba(255, 255, 255, 0.4);
   background: linear-gradient(135deg, #8b5cf6, #a78bfa);
-  animation: iconBounce 1.5s ease-in-out infinite;
-}
-
-@keyframes iconBounce {
-  0%, 100% {
-    transform: perspective(500px) rotateX(0deg) rotateY(15deg) translateZ(0px) scale(1.15);
-  }
-  50% {
-    transform: perspective(500px) rotateX(0deg) rotateY(15deg) translateZ(15px) scale(1.15);
-  }
 }
 
 /* ===== Date Badge ===== */

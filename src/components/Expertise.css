@@ -92,40 +92,13 @@
   position: relative;
   display: inline-block;
 
-  filter: drop-shadow(0 4px 8px rgba(59, 130, 246, 0.3))
-          drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
-}
-
-.icon::before {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 35%;
-  height: 35%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), transparent);
-  border-radius: 50%;
-  filter: blur(4px);
-  z-index: 1;
-}
-
-.icon::after {
-  content: '';
-  position: absolute;
-  bottom: -20%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  height: 25%;
-  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.5), transparent);
-  filter: blur(10px);
-  z-index: -1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15))
+          drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .card:hover .icon {
   transform: perspective(600px) rotateX(-10deg) rotateY(12deg) translateZ(25px) scale(1.12);
-  filter: drop-shadow(0 6px 12px rgba(59, 130, 246, 0.5))
-          drop-shadow(0 12px 24px rgba(0, 0, 0, 0.3));
+
   animation: naturalFloat 2.5s ease-in-out infinite;
 }
 

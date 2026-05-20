@@ -210,8 +210,6 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
-  transform-style: preserve-3d;
-  transform: perspective(600px) rotateX(10deg) rotateY(-5deg);
 }
 
 .social-icon::before {
@@ -225,37 +223,15 @@
   transition: left 0.5s ease;
 }
 
-.social-icon::after {
-  content: '';
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  width: 30%;
-  height: 30%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), transparent);
-  border-radius: 50%;
-  filter: blur(3px);
-}
-
 .social-icon:hover::before {
   left: 100%;
 }
 
 .social-icon:hover {
-  transform: perspective(600px) rotateX(-8deg) rotateY(15deg) translateZ(20px) scale(1.15);
+  transform: translateY(-8px) rotate(10deg) scale(1.15);
   box-shadow: 
     0 12px 35px rgba(255, 215, 0, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  animation: socialBounce 1.5s ease-in-out infinite;
-}
-
-@keyframes socialBounce {
-  0%, 100% {
-    transform: perspective(600px) rotateX(-8deg) rotateY(15deg) translateZ(20px) scale(1.15);
-  }
-  50% {
-    transform: perspective(600px) rotateX(-8deg) rotateY(15deg) translateZ(25px) scale(1.18);
-  }
 }
 
 /* Facebook */
