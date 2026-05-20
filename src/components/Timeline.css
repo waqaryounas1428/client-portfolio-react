@@ -77,8 +77,6 @@
   position: relative;
   overflow: hidden;
   text-align: center;
-  will-change: transform, box-shadow;
-  transform: translateZ(0);
 }
 
 /* Card Glow Effect */

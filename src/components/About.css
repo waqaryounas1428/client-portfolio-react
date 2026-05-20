@@ -43,10 +43,8 @@
   padding: 28px 20px;
   border-radius: 18px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   border: 1px solid rgba(59, 130, 246, 0.1);
-  will-change: transform, box-shadow;
-  transform: translateZ(0);
 }
 
 .about-card:hover {
