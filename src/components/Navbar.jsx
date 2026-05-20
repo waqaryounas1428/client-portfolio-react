@@ -22,7 +22,7 @@ export const Navbar = () => {
         <li><a href="#expertise" onClick={handleNavClick}>Expertise</a></li>
         <li><a href="#timeline" onClick={handleNavClick}>Journey</a></li>
         <li><a href="#research" onClick={handleNavClick}>Research Paper</a></li>
-        <li><a href="#contact" onClick={handleNavClick}>Contact</a></li>
+        <li><a href="#footer" onClick={handleNavClick}>Contact</a></li>
       </ul>
     </nav>
   );

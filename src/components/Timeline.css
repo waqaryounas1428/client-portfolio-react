@@ -1,6 +1,6 @@
 /* ===== Section ===== */
 .timeline-section {
-  padding: 80px 10%;
+  padding: 40px 10%;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
   text-align: center;
   position: relative;
@@ -44,7 +44,7 @@
 .timeline-subtitle {
   font-size: 15px;
   color: #cbd5e1;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   letter-spacing: 1.2px;
   font-weight: 300;
   position: relative;
@@ -55,7 +55,7 @@
 .timeline-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -66,7 +66,7 @@
 .timeline-card {
   background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
   backdrop-filter: blur(20px);
-  padding: 32px 28px;
+  padding: 20px 22px;
   border-radius: 20px;
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.3),
@@ -110,13 +110,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   border-radius: 50%;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
-  margin-right: 12px;
+  margin-right: 10px;
   box-shadow: 
     0 8px 16px rgba(99, 102, 241, 0.5),
     0 4px 8px rgba(99, 102, 241, 0.3),
@@ -161,6 +161,16 @@
     inset 0 -6px 12px rgba(0, 0, 0, 0.4),
     inset 0 6px 12px rgba(255, 255, 255, 0.4);
   background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  animation: iconBounce 1.5s ease-in-out infinite;
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: perspective(500px) rotateX(0deg) rotateY(15deg) translateZ(0px) scale(1.15);
+  }
+  50% {
+    transform: perspective(500px) rotateX(0deg) rotateY(15deg) translateZ(15px) scale(1.15);
+  }
 }
 
 /* ===== Date Badge ===== */
@@ -168,11 +178,11 @@
   display: inline-block;
   background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: #ffffff;
-  padding: 6px 16px;
+  padding: 4px 12px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
@@ -180,12 +190,12 @@
 
 /* ===== Heading ===== */
 .timeline-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   background: linear-gradient(135deg, #60a5fa, #a78bfa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 700;
   line-height: 1.4;
   display: flex;
@@ -196,9 +206,9 @@
 
 /* ===== Description ===== */
 .timeline-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: #cbd5e1;
-  line-height: 1.7;
+  line-height: 1.6;
   font-weight: 300;
 }
 
@@ -211,53 +221,41 @@
 
 /* ===== Large Desktop (1400px+) ===== */
 @media (min-width: 1400px) {
-  .timeline-section { padding: 100px 12%; }
+  .timeline-section { padding: 50px 12%; }
   .timeline-title { font-size: 52px; }
-  .timeline-cards { gap: 32px; }
-  .timeline-card { padding: 36px 32px; }
-  .timeline-icon { width: 46px; height: 46px; font-size: 22px; margin-right: 14px; }
-  .timeline-card h3 { font-size: 20px; }
-  .timeline-card p { font-size: 15px; }
+  .timeline-cards { gap: 24px; }
+  .timeline-card { padding: 24px 26px; }
+  .timeline-icon { width: 36px; height: 36px; font-size: 16px; margin-right: 10px; }
+  .timeline-card h3 { font-size: 17px; }
+  .timeline-card p { font-size: 14px; }
 }
 
 /* ===== Tablet Landscape (1024px) ===== */
 @media (max-width: 1024px) {
-  .timeline-section { padding: 70px 6%; }
+  .timeline-section { padding: 35px 6%; }
   .timeline-title { font-size: 40px; }
-  .timeline-subtitle { font-size: 14px; margin-bottom: 50px; }
-  .timeline-cards { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .timeline-card { padding: 28px 24px; }
-  .timeline-icon { width: 38px; height: 38px; font-size: 18px; margin-right: 10px; }
-  .timeline-card h3 { font-size: 17px; }
-  .timeline-card p { font-size: 13.5px; }
+  .timeline-subtitle { font-size: 14px; margin-bottom: 25px; }
+  .timeline-cards { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .timeline-card { padding: 20px 18px; }
+  .timeline-icon { width: 32px; height: 32px; font-size: 15px; margin-right: 8px; }
+  .timeline-card h3 { font-size: 15px; }
+  .timeline-card p { font-size: 12.5px; }
 }
 
 /* ===== Tablet Portrait (768px) ===== */
 @media (max-width: 768px) {
-  .timeline-section { padding: 60px 5%; }
+  .timeline-section { padding: 30px 5%; }
   .timeline-title { font-size: 34px; }
-  .timeline-subtitle { font-size: 13px; margin-bottom: 40px; }
-  .timeline-cards { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .timeline-card { padding: 24px 20px; border-radius: 16px; }
-  .timeline-icon { width: 36px; height: 36px; font-size: 16px; margin-right: 8px; }
-  .timeline-date { font-size: 11px; padding: 5px 14px; margin-bottom: 14px; }
-  .timeline-card h3 { font-size: 16px; margin-bottom: 10px; }
-  .timeline-card p { font-size: 13px; line-height: 1.6; }
-}
-
-/* ===== Mobile (480px) ===== */
-@media (max-width: 480px) {
-  .timeline-section { padding: 50px 4%; }
-  .timeline-title { font-size: 28px; }
-  .timeline-subtitle { font-size: 12px; margin-bottom: 32px; }
+  .timeline-subtitle { font-size: 13px; margin-bottom: 20px; }
   .timeline-cards { 
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 16px;
+    gap: 14px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10px;
+    max-width: 100%;
   }
   .timeline-cards::-webkit-scrollbar {
     height: 6px;
@@ -271,27 +269,74 @@
     border-radius: 10px;
   }
   .timeline-card { 
-    min-width: 280px;
+    min-width: 240px;
+    max-width: 240px;
     flex-shrink: 0;
-    padding: 22px 18px; 
+    padding: 18px 16px; 
+    border-radius: 16px;
+    scroll-snap-align: start;
+  }
+  .timeline-icon { width: 30px; height: 30px; font-size: 14px; margin-right: 7px; }
+  .timeline-date { font-size: 10px; padding: 3px 10px; margin-bottom: 10px; }
+  .timeline-card h3 { font-size: 14px; margin-bottom: 7px; }
+  .timeline-card p { font-size: 12px; line-height: 1.5; }
+}
+
+/* ===== Mobile (480px) ===== */
+@media (max-width: 480px) {
+  .timeline-section { padding: 25px 4%; }
+  .timeline-title { font-size: 24px; }
+  .timeline-subtitle { font-size: 11px; margin-bottom: 18px; }
+  .timeline-cards { 
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+  .timeline-cards::-webkit-scrollbar {
+    height: 6px;
+  }
+  .timeline-cards::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+  }
+  .timeline-cards::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 10px;
+  }
+  .timeline-card { 
+    min-width: 200px;
+    max-width: 200px;
+    flex-shrink: 0;
+    padding: 14px 12px; 
     border-radius: 14px;
     scroll-snap-align: start;
   }
-  .timeline-icon { width: 34px; height: 34px; font-size: 15px; margin-right: 8px; }
-  .timeline-date { font-size: 10px; padding: 4px 12px; margin-bottom: 12px; }
-  .timeline-card h3 { font-size: 15px; margin-bottom: 8px; }
-  .timeline-card p { font-size: 12.5px; line-height: 1.5; }
+  .timeline-icon { width: 26px; height: 26px; font-size: 12px; margin-right: 6px; }
+  .timeline-date { font-size: 8px; padding: 3px 8px; margin-bottom: 7px; }
+  .timeline-card h3 { font-size: 12px; margin-bottom: 5px; }
+  .timeline-card p { font-size: 10px; line-height: 1.4; }
 }
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
-  .timeline-title { font-size: 24px; }
-  .timeline-subtitle { font-size: 11px; }
-  .timeline-card { 
-    min-width: 260px;
-    padding: 20px 16px; 
+  .timeline-section { padding: 18px 3%; }
+  .timeline-title { font-size: 20px; }
+  .timeline-subtitle { font-size: 10px; margin-bottom: 12px; }
+  .timeline-cards {
+    gap: 8px;
   }
-  .timeline-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
-  .timeline-card h3 { font-size: 14px; }
-  .timeline-card p { font-size: 12px; }
+  .timeline-card { 
+    min-width: 180px;
+    max-width: 180px;
+    padding: 12px 10px; 
+  }
+  .timeline-icon { width: 24px; height: 24px; font-size: 11px; margin-right: 5px; }
+  .timeline-card h3 { font-size: 11px; }
+  .timeline-card p { font-size: 10px; }
+  .timeline-date { font-size: 7px; padding: 2px 6px; margin-bottom: 5px; }
 }
