@@ -88,12 +88,15 @@
   font-size: 14.5px;
   line-height: 1.8;
   color: #334155;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 1px solid rgba(124, 58, 237, 0.12);
+  /* Performance optimization */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .intro:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) translateZ(0);
   box-shadow: 0 16px 40px rgba(124, 58, 237, 0.14);
   border-color: rgba(124, 58, 237, 0.28);
 }
@@ -116,16 +119,22 @@
   object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 16px 40px rgba(124, 58, 237, 0.15);
-  transition: all 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   border: 3px solid rgba(124, 58, 237, 0.25);
+  /* Full HD image quality */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   image-rendering: high-quality;
   -ms-interpolation-mode: bicubic;
+  object-position: center;
+  /* Performance optimization */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 .hero-right img:hover {
-  transform: scale(1.04) rotate(-1deg);
+  transform: scale(1.04) rotate(-1deg) translateZ(0);
   box-shadow: 0 22px 50px rgba(219, 39, 119, 0.2);
   border-color: rgba(219, 39, 119, 0.4);
 }

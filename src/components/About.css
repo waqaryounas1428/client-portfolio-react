@@ -43,12 +43,15 @@
   padding: 28px 20px;
   border-radius: 18px;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   border: 1px solid rgba(59, 130, 246, 0.1);
+  /* Performance optimization */
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .about-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) translateZ(0);
   box-shadow: 0 14px 36px rgba(59, 130, 246, 0.18);
   border-color: rgba(59, 130, 246, 0.28);
 }

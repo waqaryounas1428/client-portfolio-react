@@ -54,7 +54,7 @@ export const Footer = () => {
             <a href="https://share.google/qe6YhNL9tqQG30PK4" target="_blank" rel="noopener noreferrer" className="social-icon github" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://share.google/YiKB2rgzDklikDDlI" target="_blank" rel="noopener noreferrer" className="social-icon writers-inn" aria-label="Writers Inn">
+            <a href="https://www.linkedin.com/in/nasrullah-mastoi-117a3840b" target="_blank" rel="noopener noreferrer" className="social-icon writers-inn" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
             <a href="mailto:nasrullah.agri87@gmail.com" className="social-icon email" aria-label="Email">

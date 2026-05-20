@@ -14,6 +14,10 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  /* Performance optimizations */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 #root {
@@ -22,6 +26,9 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /* Hardware acceleration */
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 /* Scrollbar Styling */
@@ -54,12 +61,13 @@ body {
   color: #ffffff;
 }
 
-/* Scroll Animation */
+/* Scroll Animation - Optimized */
 .scroll-effect {
   opacity: 0;
   transform: translateY(40px);
   filter: blur(6px);
-  transition: all 0.8s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+  will-change: opacity, transform, filter;
 }
 
 .scroll-effect.show {
@@ -80,9 +88,10 @@ body {
   }
 }
 
-/* Smooth Transitions */
+/* Smooth Transitions - Optimized */
 a, button {
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  will-change: transform;
 }
 
 /* Focus Styles for Accessibility */
@@ -92,11 +101,20 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Responsive Images */
+/* Responsive Images - Full HD Optimized */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  /* Full HD image rendering */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: high-quality;
+  -ms-interpolation-mode: bicubic;
+  /* Performance */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Scroll Offset for Mobile */
