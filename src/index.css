@@ -9,15 +9,20 @@ html {
   scroll-padding-top: 70px; /* Navbar height + extra space */
 }
 
+/* Performance Optimization */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  /* Performance optimizations */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  /* Hardware acceleration for smooth scrolling */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 #root {
@@ -26,9 +31,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* Hardware acceleration */
-  transform: translateZ(0);
-  will-change: transform;
 }
 
 /* Scrollbar Styling */
@@ -61,12 +63,14 @@ body {
   color: #ffffff;
 }
 
-/* Scroll Animation - Optimized */
+/* Scroll Animation - Faster & Smoother */
 .scroll-effect {
   opacity: 0;
-  transform: translateY(40px);
-  filter: blur(6px);
-  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+  transform: translateY(30px);
+  filter: blur(4px);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: opacity, transform, filter;
 }
 
@@ -88,10 +92,9 @@ body {
   }
 }
 
-/* Smooth Transitions - Optimized */
+/* Smooth Transitions */
 a, button {
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-  will-change: transform;
+  transition: all 0.3s ease;
 }
 
 /* Focus Styles for Accessibility */
@@ -101,20 +104,11 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Responsive Images - Full HD Optimized */
+/* Responsive Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
-  /* Full HD image rendering */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  image-rendering: high-quality;
-  -ms-interpolation-mode: bicubic;
-  /* Performance */
-  transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 /* Scroll Offset for Mobile */

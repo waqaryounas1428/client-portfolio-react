@@ -198,13 +198,15 @@
   box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.08),
     0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   min-height: 280px;
+  will-change: transform, box-shadow;
+  transform: translateZ(0);
 }
 
 .contact-description-card:hover {
@@ -343,21 +345,19 @@
   border-radius: 32px;
   object-fit: cover;
   display: block;
-  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 
     0 15px 40px rgba(0, 0, 0, 0.2),
     0 5px 15px rgba(0, 0, 0, 0.1);
   filter: brightness(1.02) contrast(1.08) saturate(1.05);
   position: relative;
-  /* Full HD image quality */
+  /* Full HD Image Quality */
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   image-rendering: high-quality;
   -ms-interpolation-mode: bicubic;
-  object-position: center;
-  /* Performance optimization */
-  transform: translateZ(0);
   backface-visibility: hidden;
+  transform: translateZ(0);
   will-change: transform;
 }
 
