@@ -14,11 +14,12 @@
 .about-title {
   font-size: 44px;
   font-weight: 700;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #2563eb, #1d4ed8, #1e40af);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 12px;
+  filter: drop-shadow(0 2px 8px rgba(37, 99, 235, 0.4));
 }
 
 .about-subtitle {
@@ -38,13 +39,13 @@
 
 /* ===== Card ===== */
 .about-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 28px 20px;
   border-radius: 18px;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 8px 28px rgba(37, 99, 235, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   /* Performance optimization */
   will-change: transform;
   transform: translateZ(0);
@@ -52,14 +53,15 @@
 
 .about-card:hover {
   transform: translateY(-8px) translateZ(0);
-  box-shadow: 0 14px 36px rgba(59, 130, 246, 0.18);
-  border-color: rgba(59, 130, 246, 0.28);
+  box-shadow: 0 16px 40px rgba(59, 130, 246, 0.25);
+  border-color: rgba(59, 130, 246, 0.4);
 }
 
 .about-icon {
   font-size: 38px;
-  color: #3b82f6;
+  color: #2563eb;
   margin-bottom: 14px;
+  filter: drop-shadow(0 4px 8px rgba(37, 99, 235, 0.3));
 }
 
 .about-card h3 {
